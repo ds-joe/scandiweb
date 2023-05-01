@@ -1,0 +1,7 @@
+.addProductForm {
+  @include flex(start, start, column);
+  gap:1rem;
+  > .row {
+    gap:1rem;
+  }
+}

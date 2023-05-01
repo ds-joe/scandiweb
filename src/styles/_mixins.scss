@@ -1,0 +1,7 @@
+@mixin flex($justfiy:"", $align:"", $flow: ""){
+  display: flex;
+  @if($justfiy != "") { justify-content: $justfiy; }
+  @if($align != "") { align-items: $align; }
+  @if($flow != "") { flex-flow: $flow; }
+  @content;
+}

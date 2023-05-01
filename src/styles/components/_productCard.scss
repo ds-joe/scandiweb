@@ -1,0 +1,5 @@
+.product-card {
+  min-width: 220px;
+  padding: 1rem 1rem 3rem 1rem;
+  @include flex(center, center, column);
+}
