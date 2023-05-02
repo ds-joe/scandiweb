@@ -15,7 +15,7 @@ import { create_product } from "@/api/product/create_product";
 
 const AddProduct: FC = () => {
   const navigate = useNavigate();
-  const [productType, setProductType] = useState<string>("dvd");
+  const [productType, setProductType] = useState<string>("DVD");
   const [name, setName] = useState<string>("");
   const [price, setPrice] = useState<string>("");
   const [sku, setSku] = useState<string>("");
@@ -53,7 +53,7 @@ const AddProduct: FC = () => {
         </div>
       </Header>
       <div className="container">
-        <form className="my-4 addProductForm">
+        <form className="my-4 addProductForm" id="product_form">
 
           <div className="row">
             <div className="col-12 col-lg-6">
@@ -83,16 +83,16 @@ const AddProduct: FC = () => {
               <div className="form-group">
                 <label htmlFor="productType">Type Switcher</label>
                 <select className={`form-control ${productType === "" ? "is-invalid" : "is-valid"}`} id="productType" onChange={handleProductType}>
-                  <option value="dvd">DVD</option>
-                  <option value="book">Book</option>
-                  <option value="furniture">Furniture</option>
+                  <option value="DVD">DVD</option>
+                  <option value="Book">Book</option>
+                  <option value="Furniture">Furniture</option>
                 </select>
               </div>
             </div>
           </div>
-          {productType === "dvd" && <Dvd value={resultValue} setValue={setResultValue} />}
-          {productType === "book" && <Book value={resultValue} setValue={setResultValue} />}
-          {productType === "furniture" && <Furniture value={resultValue} setValue={setResultValue} />}
+          {productType === "DVD" && <Dvd value={resultValue} setValue={setResultValue} />}
+          {productType === "Book" && <Book value={resultValue} setValue={setResultValue} />}
+          {productType === "Furniture" && <Furniture value={resultValue} setValue={setResultValue} />}
 
         </form>
       </div>

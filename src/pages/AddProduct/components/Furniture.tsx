@@ -43,8 +43,8 @@ const Furniture: FC<FurnitureProps> = ({ setValue, value }) => {
 
         <div className="col-12 my-2">
           <div className="form-group">
-            <label htmlFor="lenght">Lenght</label>
-            <input className={`form-control ${length !== "" && Number(length) > 0 ? "is-valid" : "is-invalid"}`} id="lenght" type="number" placeholder="Lenght" onChange={(e: any) => setLength(e.target.value)} />
+            <label htmlFor="length">Length</label>
+            <input className={`form-control ${length !== "" && Number(length) > 0 ? "is-valid" : "is-invalid"}`} id="length" type="number" placeholder="Lenght" onChange={(e: any) => setLength(e.target.value)} />
           </div>
         </div>
         <p className="fw-bold mt-2 ">Please, provide dimensions height / width / length</p>

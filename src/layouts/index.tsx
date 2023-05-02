@@ -1,5 +1,5 @@
 // Dependences
-import {FC, lazy} from "react";
+import {FC} from "react";
 
 // Router
 import {Routes, Route} from "react-router-dom";

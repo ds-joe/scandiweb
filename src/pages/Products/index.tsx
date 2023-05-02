@@ -5,8 +5,8 @@ import { FC, useEffect, useState, lazy } from "react";
 import { NavLink } from "react-router-dom";
 
 // Components
-const Header = lazy(() => import("@/components/Header"));
-const Product = lazy(() => import("@/components/Product"));
+import Header from "@/components/Header";
+import Product from "@/components/Product";
 
 // Interfaces
 import { ProductProps } from "@/components/Product";
@@ -57,8 +57,8 @@ const Products: FC = () => {
     <div className="mb-3">
       <Header title="Products List">
         <div className="d-flex align-items-center gap-1">
-          <NavLink to="/addproduct"><button className="btn btn-outline-primary">Add</button></NavLink>
-          <button className="btn btn-outline-danger" id="delete-product-btn" onClick={handleRemoveProducts}>Mass Delete</button>
+          <NavLink to="/addproduct" ><button className="btn btn-outline-primary">ADD</button></NavLink>
+          <button className="btn btn-outline-danger" id="delete-product-btn" onClick={handleRemoveProducts}>MASS DELETE</button>
         </div>
       </Header>
 

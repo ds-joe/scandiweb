@@ -3,7 +3,9 @@
 ## How to use ?
 * install packages `npm install`
 * start application `npm start`
+* build application `npm run build`
 * test application `npm test:ts`
+
 
 ## Languages Used
 * Typescript
