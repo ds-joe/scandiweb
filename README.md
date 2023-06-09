@@ -1,7 +1,5 @@
 # Scandiweb Junior Developer test assignment!
 
-[Website Link](https://scandiassignment31.000webhostapp.com/)
-
 ## How to start ?
 * install packages `npm install`
 * start application `npm start`
