@@ -12,7 +12,7 @@
 * PHP
 * Shell Script
 
-## Librarys
+## Libraries
 * React
 * Bootstrap
 * React-Router
